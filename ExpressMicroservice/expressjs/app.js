@@ -20,6 +20,12 @@ redisClient.on('connect', function() {
 // It is used here as an example of how to subscribe to an event with Redis.
 redisClient.subscribe('testEvent');
 
+// Add CRUD routes for the `Todo` resource
+
+// Emit events using Redis instead of the events library
+
+// Listen for the `UserDeleted` event and delete the user's Todos
+
 app.get('/', (req, res) => {
   res.send('Express.js server is running!');
 });
