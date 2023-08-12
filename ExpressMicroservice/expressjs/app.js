@@ -21,10 +21,31 @@ redisClient.on('connect', function() {
 redisClient.subscribe('testEvent');
 
 // Add CRUD routes for the `Todo` resource
+app.get('/todos', (req, res) => {
+  // Implement code to retrieve all todos
+});
+
+app.post('/todos', (req, res) => {
+  // Implement code to create a new todo
+});
+
+app.put('/todos/:id', (req, res) => {
+  // Implement code to update a todo by ID
+});
+
+app.delete('/todos/:id', (req, res) => {
+  // Implement code to delete a todo by ID
+});
 
 // Emit events using Redis instead of the events library
+redisClient.on('message', (channel, message) => {
+  // Implement code to handle Redis messages
+});
 
 // Listen for the `UserDeleted` event and delete the user's Todos
+redisClient.on('UserDeleted', (userId) => {
+  // Implement code to delete the user's Todos
+});
 
 app.get('/', (req, res) => {
   res.send('Express.js server is running!');
