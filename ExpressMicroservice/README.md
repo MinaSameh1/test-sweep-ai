@@ -4,7 +4,9 @@ This is the Express.js microservice for our project. More details will be added 
 
 ## Setup and Running
 
-Instructions for setting up and running the microservice will be provided soon.
+1. Navigate to the `ExpressMicroservice/expressjs` directory.
+2. Install the necessary dependencies by running `npm install`.
+3. Start the application by running `npm start`.
 
 ## Contributing
 
