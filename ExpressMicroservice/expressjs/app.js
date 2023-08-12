@@ -16,6 +16,8 @@ redisClient.on('connect', function() {
   console.log('Connected to Redis');
 });
 
+// The 'testEvent' is a placeholder for a real event that the application would subscribe to.
+// It is used here as an example of how to subscribe to an event with Redis.
 redisClient.subscribe('testEvent');
 
 app.get('/', (req, res) => {
