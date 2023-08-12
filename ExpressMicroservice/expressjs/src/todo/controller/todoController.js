@@ -22,4 +22,4 @@ class TodoController {
   }
 }
 
-module.export
+module.exports
